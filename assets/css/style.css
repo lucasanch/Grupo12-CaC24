@@ -15,7 +15,7 @@ h1{
      font-weight: 900;
      font-size: 40px;
      font-style: bold;
-     max-width: 15em;
+     max-width: 15em;  /* lucas: xq este ancho maximo? */
      text-transform: uppercase;
      justify-content: center;
      align-items: center;
@@ -50,20 +50,19 @@ h2{
     gap: 10px;
     font-size: 80%;
     padding: 25px;
-    justify-content:CENTER;
     
 }
 
 .header{
     display: flex;
     justify-items: center;
+    justify-content: space-between;
     background-color:#ACE2E1;
     padding:20px;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 999;
-    justify-content:left;
 }
 
 section{

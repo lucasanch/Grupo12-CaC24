@@ -71,7 +71,7 @@ h2{
 section{
     background-color: #41C9E2;
     padding: 10px;
-    position:sticky;
+    /*position:sticky;*/
 }
 
 #banner{
@@ -144,6 +144,13 @@ background-color: #239aaf;
 
 
 /*agregado por Christian*/
+.TituloSection{
+    color: #ffffff;
+    text-align: center;
+    margin: 50px 0px 25px;
+    font-size: 200%;
+}
+/*principales diarios*/
 
 .imgDiario {
     width: 75%;
@@ -182,17 +189,7 @@ background-color: #239aaf;
     align-items: center;
 }
 
-.TituloSection{
-    color: #ffffff;
-    text-align: center;
-    margin: 50px 0px 25px;
-    font-size: 200%;
-}
-
-
-
-
-
+/*precio dolares*/
 .framePrecio {
     width: 320px;
     height: 260px;
@@ -209,10 +206,43 @@ background-color: #239aaf;
     flex-wrap: wrap;
 }
 
+/*noticias*/
+/* Noticias < noticia < refNoticia < ImNot, cuerpo < tituloNoticia, descrNoticia */
+.noticia {
+    margin: 30px;
+	border-radius: 10px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+    justify-content: flex-start;
+    display: flex;
+	transition: all ;
+	background: rgb(231, 231, 231);
+
+
+}
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.refNoticia {
+    display: inline-flex;
+    text-decoration: none;
+    color: #000000;
+}
+.ImNot {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
 
 
 
-
+/*footer*/
 .contenedorFooter{
     width: 100%;
     height: 100hv;

@@ -1,0 +1,42 @@
+[33mcommit 867a89491ea4ab46aed0c75c98c87882b94639a0[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: Lucasanch <lucasanch@hotmail.com>
+Date:   Wed May 15 23:39:19 2024 -0300
+
+    9no intento
+
+[33mcommit 1134ab66cae0966d225c06698271dbdcce0a7dc3[m
+Merge: a1d4de1 167adc5
+Author: Lucasanch <lucasanch@hotmail.com>
+Date:   Wed May 15 22:45:28 2024 -0300
+
+    merged chris to main
+
+[33mcommit 167adc55bd133d714538b4e312f14351b693eee7[m[33m ([m[1;31morigin/ChrisMoreno[m[33m, [m[1;32mChrisMoreno[m[33m)[m
+Author: ChrisMor02 <chriscarp2002@gmail.com>
+Date:   Sun May 12 00:03:48 2024 -0300
+
+    cambios en estructura de noticias y css de la misma
+
+[33mcommit de27c5992d1442ac9ce3465d8a5e787df11a605b[m
+Author: ChrisMor02 <chriscarp2002@gmail.com>
+Date:   Sat May 11 03:24:50 2024 -0300
+
+    segundo commit
+
+[33mcommit 89492310554993a6b039b0f785a847b92037e425[m
+Author: ChrisMor02 <chriscarp2002@gmail.com>
+Date:   Fri May 10 19:30:27 2024 -0300
+
+    primer commit prueba Chris
+
+[33mcommit a1d4de10d11a080fe2d3afbabdc230ff98addfc0[m[33m ([m[1;32mv2[m[33m, [m[1;32mlucas[m[33m)[m
+Author: Lucasanch <lucasanch@hotmail.com>
+Date:   Sat May 4 09:33:04 2024 -0300
+
+    navig a derecha
+
+[33mcommit ca677bee084ab9cdb1e98017a94274d342180fc6[m
+Author: Lucasanch <lucasanch@hotmail.com>
+Date:   Fri May 3 15:08:37 2024 -0300
+
+    version2

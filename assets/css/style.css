@@ -16,7 +16,7 @@ h1{
      color: #1B275F;
      font-family: "Roboto", sans-serif;
      font-weight: 900;
-     font-size: 40px;
+     font-size: 30px;
      font-style: bold;
      max-width: 15em;  /* lucas: xq este ancho maximo? */
      text-transform: uppercase;
@@ -29,7 +29,7 @@ h2{
     color:#1B275F;
     font-family: "Roboto", sans-serif;
      font-weight: 900;
-     font-size: 40px;
+     font-size: 20px;
      font-style: normal;
      max-width: 15em;
      text-transform: uppercase;
@@ -44,7 +44,7 @@ h2{
 .nav-links{
 
     font-family: "Play", sans-serif;
-    font-weight: 500;
+    font-weight: 800;
     font-style: normal;
     display: flex;
     text-transform: uppercase;
@@ -52,16 +52,85 @@ h2{
     list-style: none; 
     gap: 10px;
     font-size: 80%;
-    padding: 25px;
-    
+    padding: 5px;
 }
+
+.nav-links li a{
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.nav-links li a:hover{
+    color: blue;
+    font-size: 120%;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.menu-toggle-icon{
+    display: none;
+    cursor: pointer;
+    color: #1B275F;
+    font-size: 30px;
+}
+
+.nav-links-mobile{
+    display: none;
+    flex-direction: column;
+    background-color:#ACE2E1;
+    color:#1B275F;
+    width: 100%;
+    list-style-type: none;
+}
+
+.nav-links-mobile li{
+    padding: 10px;
+}
+
+.menu-toggle:checked~.nav-links-mobile{
+    display: flex;
+    flex-direction: column;
+    color: red;
+}
+
+.header~.menu-toggle:checked{
+    flex-direction: column;
+}
+
+
+@media (max-width:740px){
+
+    .nav-links{
+        display: none;
+    }
+    .menu-toggle-icon{
+        display: block;
+        color: red;
+    }
+
+
+.div-toggle{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+
+
+
+}
+
+
+
 
 .header{
     display: flex;
     justify-items: center;
     justify-content: space-between;
     background-color:#ACE2E1;
-    padding:20px;
+    padding:10px 20px;
     position: sticky;
     top: 0;
     left: 0;
@@ -254,7 +323,6 @@ background-color: #239aaf;
 	padding:10px;
     box-sizing: content-box;
 
-
 }
 
 
@@ -266,6 +334,16 @@ background-color: #239aaf;
     color: #aaf;
 }
 
-.sociales a {
-    padding: 0px 20px;
+footer div a {
+    margin: 0px 20px;
+    color: #aaf;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 40px;
+
+}
+
+footer div a:hover {
+    color: #22e;
+    font-size: 30px;
 }

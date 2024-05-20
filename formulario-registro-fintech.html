@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/form.registro.css">
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+   
     <title>Formularios</title>
 </head>
 
@@ -36,7 +37,8 @@
         <label for="firstname">Nombre:</label>
         <input type="text" name="firstname" id="firstname" maxlength="15">
     </div>
-    <div class="form-control">
+      <div class="error" id="error-firstname"></div>
+      <div class="form-control">
         <label for="lastname">Apellido:</label>
         <input type="text" name="lastname" id="lastname" maxlength="15">
     </div>
@@ -73,6 +75,7 @@
     </div>
     
     <button type="submit"> Registrarse</button>
+     <script src="/assets/js/index.js"></script>
     <div class="form-help">
         <a href="#">¿Necesitas Ayuda?</a>
     </div>

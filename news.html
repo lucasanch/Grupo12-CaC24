@@ -13,19 +13,40 @@
 
     <header class="header">
         <div id="logo">
-            <img src="assets/LogoFin.png" alt="Logo" width="60">
-            <h2>FinHouse</h2>
+            <a href="index.html">
+                <img src="assets/LogoFin.png" alt="Logo" width="40px" style="padding: 5px;">
+                <h2>FinHouse</h2>
+            </a>
         </div>
+
+        <!-- navigator desktop-->
         <div>
             <ul class="nav-links">
+                <li><a href="news.html">Noticias</a></li>
+                <li><a href="acercade.html" >Acerca de</a></li>
+                <li><a href="formulario-registro-fintech.html">Registrate</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registroFinanciero.html">Registro Financiero</a></li>
+            </ul>
+        </div>
+
+        <!-- navigator mobile-->
+        <div class="div-toggle"><input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-toggle-icon">
+            <i class="fi fi-brands-instagram"></i>
+            <i class="fi fi-rr-world"></i>
+            <i class="fi fi-brands-facebook"></i>
+                </label>
+            <ul class="nav-links-mobile">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="acercade.html" >Acerca de</a></li>
                 <li><a href="formulario-registro-fintech.html">Registrate</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="registroFinanciero.html">Registro Financiero</a></li>
-                <li><a href="https://api.bcra.gob.ar/estadisticas/v1/principalesvariables" target="_blank">Variables finacieras</a></li>
             </ul>
         </div>
+
+
 
     </header>
 
@@ -111,12 +132,20 @@
         </div>
     </section>
 
-  <footer>
-    <div class="contenedorFooter">
-        <p>Finhouse 9no intento</p>
-        <p>Derechos reservados por Copyright año 2024</p>
-    </div>
-    </footer>
-    
-</body>
+    <footer class="contenedorFooter">
+        <div class="sociales">
+           <a href="https://www.instagram.com" target="_blank"> <i class="fi fi-brands-instagram"></i> </a>
+           <a href="https://www.facebook.com" target="_blank"> <i class="fi fi-brands-facebook"></i> </a>
+           <a href="https://www.twitter.com"> <i class="fi fi-brands-twitter"></i> </a>
+       </div>
+      <div>
+           <p>Finhouse</p>
+           <p>Derechos reservados por Copyright año 2024</p>
+       </div>
+     </footer>
+   
+     <button id="scrollToTop">&#9650</button>
+     <script src="/TPOv2/assets/js/index.js"></script>
+   
+   </body>
 </html>

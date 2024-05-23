@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css');
 *{
-    box-sizing: border-box;
+    box-sizing:border-box;
     font-family:Arial, Helvetica, sans-serif;
-    justify-content: center;
+   /* justify-content: center; */
     margin: 0px;
     padding: 0px;
 
@@ -35,10 +35,31 @@ h2{
      text-transform: uppercase;
 }
 
+a{
+    text-decoration: none;
+}
 
 #logo{
     display: flex;
     align-items: center;
+    animation-name: logo-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    position: relative;
+    text-decoration: none;
+}
+
+#logo a{
+    display: flex;
+    align-items: center;
+}
+
+@keyframes logo-anim {
+    0% {left: 230px; opacity: 0;}
+    50% {left: 20px; opacity: .1;}
+    100% {left: 0px; opacity: 1;}
+    
 }
 
 .nav-links{
@@ -46,13 +67,13 @@ h2{
     font-family: "Play", sans-serif;
     font-weight: 800;
     font-style: normal;
-    display: flex;
     text-transform: uppercase;
     justify-content: end;
     list-style: none; 
-    gap: 10px;
+    gap: 15px;
     font-size: 80%;
     padding: 5px;
+    display: none;
 }
 
 .nav-links li a{
@@ -70,23 +91,33 @@ h2{
 }
 
 .menu-toggle-icon{
-    display: none;
     cursor: pointer;
     color: #1B275F;
     font-size: 30px;
+
 }
 
 .nav-links-mobile{
+    font-family: "Play", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: right;
+    list-style: none; 
+    gap: 15px;
+    font-size: 80%;
+    padding: 5px;
     display: none;
-    flex-direction: column;
-    background-color:#ACE2E1;
-    color:#1B275F;
-    width: 100%;
-    list-style-type: none;
 }
 
 .nav-links-mobile li{
-    padding: 10px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.nav-links-mobile li a:hover{
+    color: blue;
+    font-size: 120%;
 }
 
 .menu-toggle:checked~.nav-links-mobile{
@@ -95,39 +126,9 @@ h2{
     color: red;
 }
 
-.header~.menu-toggle:checked{
-    flex-direction: column;
-}
-
-
-@media (max-width:740px){
-
-    .nav-links{
-        display: none;
-    }
-    .menu-toggle-icon{
-        display: block;
-        color: red;
-    }
-
-
-.div-toggle{
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-}
-
-
-
-
-}
-
-
-
 
 .header{
     display: flex;
-    justify-items: center;
     justify-content: space-between;
     background-color:#ACE2E1;
     padding:10px 20px;
@@ -135,7 +136,60 @@ h2{
     top: 0;
     left: 0;
     z-index: 999;
+    margin-bottom: 5px;
 }
+
+.header div h2{
+    display: none
+}
+
+
+@media screen and (min-width:740px){
+    .header div h2{
+        display:flex;
+    }
+
+    .menu-toggle-icon{
+        display: block;
+        color: red;
+    }
+    .nav-links{
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width:1440px){
+    
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-links-mobile{
+        display: none;
+    }
+    .menu-toggle-icon{
+        display: none;
+        color: blue;
+    }
+    .menu-toggle:checked~.nav-links-mobile{
+        display: none;
+    }
+
+
+
+}
+
+
+.div-toggle{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+
 
 section{
     background-color: #41C9E2;
@@ -164,52 +218,7 @@ body{
     font-weight: 400;
     font-style: normal;
 }
-/* INCOMPLETO!!! 
-https://www.youtube.com/watch?v=2CEptqw-bSQ&t=546s
 
-.carrusel{
-width: 90%;
-max-width: 120em;
-background-color: #239aaf;
-@include neo(1, 1em,1em);    
-
-}
-
-.carrusel.grande{
-    width: 200%;
-    background-color: orange;
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-
-}
-.carrusel.img{
-    width:calc( 100% / 2);
-    background-color: LIME;
-
-}
-
-.carrusel.puntos{
-    width:100%;
-    background-color: RED;
-    padding: 1em;
-    padding:1em;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.carrusel.punto{
-    width: 2em;
-    height: 2em;
-    background-color: blue;
-    margin 1em;
-}
-
-*/
 
 
 /*agregado por Christian*/
@@ -314,14 +323,13 @@ background-color: #239aaf;
 
 /*footer*/
 .contenedorFooter{
-    width: 100%;
-    height: 100hv;
 	background: #202020;
 	color: #aaf;
     font-family: "Roboto", sans-serif;
 	font-size: 10px;
 	padding:10px;
     box-sizing: content-box;
+    margin-top: 5px;
 
 }
 
@@ -346,4 +354,22 @@ footer div a {
 footer div a:hover {
     color: #22e;
     font-size: 30px;
+}
+
+#scrollToTop{
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    z-index: 999;
+    cursor: pointer;
+    background-color: #008DDA;
+    color: #1B275F;
+    border:#41C9E2 3px solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 10px;
 }

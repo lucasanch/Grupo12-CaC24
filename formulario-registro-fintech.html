@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="Image" >
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/form.registro.css">
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
@@ -14,74 +15,112 @@
 <body class="body-register">
 
     <header class="header">
-     <nav>
         <div id="logo">
-            <img src="assets/LogoFin.png" alt="Logo" width="60">
-            <h2>FinHouse</h2>
-        
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="acercade.html" >Acerca de</a></li>
-            <li><a href="news.html">Noticias</a></li>
-            <li><a href="formulario-registro-fintech.html">Registrate</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-    </nav>
-    </header>
-
-
-    <section class="form-wrapper">
-    <h2> Formulario de Registro</h2>
-
-    <form id="formRegister" method="POST" novalidate action="#">
-        <div class="form-control">
-        <label for="firstname">Nombre:</label>
-        <input type="text" name="firstname" id="firstname" maxlength="15">
-    </div>
-      <div class="error" id="error-firstname"></div>
-      <div class="form-control">
-        <label for="lastname">Apellido:</label>
-        <input type="text" name="lastname" id="lastname" maxlength="15">
-    </div>
-    <div class="form-control">
-        <label for="email-txt">E-mail:</label>
-        <input type="email" name="email-txt" id="email-txt" maxlength="15">
-    </div>
-    <div class="form-control">
-    <label for="password">Contraseña:</label>
-    <input type="password" name="password" id="password" maxlength="15">
-    </div>
-    <div class="form-control">
-        <label for="birthdate">Fecha de Nacimiento:</label>
-        <input type="date" name="birthdate" id="birthdate">
-    </div>
-    <div class="form-control">
-        <label for="country">País:</label>
-        <select name="country" id="country" class="form-select">
-            <option value="">Seleccione</option>
-            <option value="AR">Argentina</option>
-            <option value="BR">Brasil</option>
-            <option value="CH">Chile</option>
-            <option value="UY">Uruguay</option>
-            <option value="CO">Colombia</option>
-            <option value="OT">Otro</option>
-        </select>
-    </div>
-    <div class="form-terms">
-        <div class="terms">
-            <input type="checkbox" id="terms">
-            <label for="terms">Acepto términos y condiciones</label>
+            <a href="index.html">
+                <img src="assets/LogoFin.png" alt="Logo" width="40px" style="padding: 5px;">
+                <h2>FinHouse</h2>
+            </a>
         </div>
 
-    </div>
-    
-    <button type="submit"> Registrarse</button>
-     <script src="/assets/js/index.js"></script>
-    <div class="form-help">
-        <a href="#">¿Necesitas Ayuda?</a>
-    </div>
-    </form>
-</section>
+        <!-- navigator desktop-->
+        <div>
+            <ul class="nav-links">
+                <li><a href="news.html">Noticias</a></li>
+                <li><a href="acercade.html" >Acerca de</a></li>
+                <li><a href="formulario-registro-fintech.html">Registrate</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
 
+        <!-- navigator mobile-->
+        <div class="div-toggle"><input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-toggle-icon">
+            <i class="fi fi-brands-instagram"></i>
+            <i class="fi fi-rr-world"></i>
+            <i class="fi fi-brands-facebook"></i>
+                </label>
+            <ul class="nav-links-mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="acercade.html" >Acerca de</a></li>
+                <li><a href="formulario-registro-fintech.html">Registrate</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registroFinanciero.html">Registro Financiero</a></li>
+            </ul>
+        </div>
+
+
+
+    </header>
+
+    <div class="form-center">
+        <section class="form-wrapper">
+        <h2> Formulario de Registro</h2>
+
+        <form id="formRegister" method="POST" novalidate action="#">
+            <div class="form-control">
+            <label for="firstname">Nombre:</label>
+            <input type="text" name="firstname" id="firstname" maxlength="15">
+        </div>
+        <div class="error" id="error-firstname"></div>
+        <div class="form-control">
+            <label for="lastname">Apellido:</label>
+            <input type="text" name="lastname" id="lastname" maxlength="15">
+        </div>
+        <div class="form-control">
+            <label for="email-txt">E-mail:</label>
+            <input type="email" name="email-txt" id="email-txt" maxlength="15">
+        </div>
+        <div class="form-control">
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password" maxlength="15">
+        </div>
+        <div class="form-control">
+            <label for="birthdate">Fecha de Nacimiento:</label>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+        <div class="form-control">
+            <label for="country">País:</label>
+            <select name="country" id="country" class="form-select">
+                <option value="">Seleccione</option>
+                <option value="AR">Argentina</option>
+                <option value="BR">Brasil</option>
+                <option value="CH">Chile</option>
+                <option value="UY">Uruguay</option>
+                <option value="CO">Colombia</option>
+                <option value="OT">Otro</option>
+            </select>
+        </div>
+        <div class="form-terms">
+            <div class="terms">
+                <input type="checkbox" id="terms">
+                <label for="terms">Acepto términos y condiciones</label>
+            </div>
+
+        </div>
+        
+        <button type="submit"> Registrarse</button>
+        <script src="/assets/js/index.js"></script>
+        <div class="form-help">
+            <a href="#">¿Necesitas Ayuda?</a>
+        </div>
+        </form>
+        </section>
+    </div>
+
+<footer class="contenedorFooter">
+    <div class="sociales">
+       <a href="https://www.instagram.com" target="_blank"> <i class="fi fi-brands-instagram"></i> </a>
+       <a href="https://www.facebook.com" target="_blank"> <i class="fi fi-brands-facebook"></i> </a>
+       <a href="https://www.twitter.com"> <i class="fi fi-brands-twitter"></i> </a>
+   </div>
+  <div>
+       <p>Finhouse</p>
+       <p>Derechos reservados por Copyright año 2024</p>
+   </div>
+ </footer>
+
+ <button id="scrollToTop">&#9650</button>
+ <script src="/TPOv2/assets/js/index.js"></script>
 
 </body>
 </html>

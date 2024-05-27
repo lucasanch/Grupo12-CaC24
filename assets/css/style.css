@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css');
 *{
-    box-sizing: border-box;
+    margin: 0px 5px;
+    padding: 0px 0px;
     font-family:Arial, Helvetica, sans-serif;
     justify-content: center;
-    margin: 0px;
-    padding: 0px;
-
- 
     
 }
 
@@ -141,7 +138,7 @@ h2{
 section{
     background-color: #41C9E2;
     padding: 10px;
-    /*position:sticky;*/
+    position:sticky;
 }
 
 #banner{
@@ -155,7 +152,7 @@ section{
 
 body{
     background-color: #008DDA;
-    margin: 0px 5px 0px 5px;
+    font-family: "Reddit Sans", sans-serif;
 }
 
 
@@ -211,7 +208,6 @@ background-color: #239aaf;
 }
 
 */
-
 
 /*agregado por Christian*/
 .TituloSection{
@@ -319,7 +315,7 @@ background-color: #239aaf;
 	color: #aaf;
     font-family: "Roboto", sans-serif;
 	font-size: 10px;
-	padding:10px;
+	padding: 1rem;
     box-sizing: content-box;
 
 }

@@ -462,7 +462,7 @@ footer div a:hover {
     flex-wrap: wrap;
     display: inline-flex;
     flex-wrap: wrap;
-    
+    height: 135px;
 	border-radius: 0 10px 10px 0;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
@@ -474,6 +474,7 @@ footer div a:hover {
 
 .FotoPerfil {
     border-radius: 100% 0 0 100%;
+    height: 135px;
     object-fit: contain;
 }
 

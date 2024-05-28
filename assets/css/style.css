@@ -334,6 +334,7 @@ background-color: #239aaf;
 .dol {
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /*noticias*/
@@ -417,11 +418,17 @@ footer div a:hover {
     justify-content: center;
     align-items: center;
     margin: 50px;
+    border-radius: 30px;
+    background: linear-gradient(-360deg, #bababa, transparent);
+    color: #ffffff;
+    padding: 70px 0px;
+
 }
 
 .StringDescrEmpresa {
     justify-content: block;
     text-align: justify;
+    margin: 10px;
 }
 
 .Staff {
@@ -467,6 +474,19 @@ footer div a:hover {
 .FotoPerfil {
     border-radius: 100% 0 0 100%;
     object-fit: contain;
+}
+
+.NombreIntegrante {
+    color: #000000;
+    text-align: center;
+    font-size: 150%;
+    padding-bottom: 20px;
+}
+
+.DescrIntegrante {
+    color: #000000;
+    text-align: justify;
+    margin: 5px 20px;
 }
 
 #scrollToTop{

@@ -129,7 +129,7 @@ a{
 .menu-toggle:checked~.nav-links-mobile{
     display: flex;
     flex-direction: column;
-    color: red;
+    color: blue;
 }
 
 
@@ -157,7 +157,7 @@ a{
 
     .menu-toggle-icon{
         display: block;
-        color: red;
+        color: blue;
     }
     .nav-links{
         display: none;
@@ -226,53 +226,6 @@ body{
     font-style: normal;
 }
 
-
-/* INCOMPLETO!!! 
-https://www.youtube.com/watch?v=2CEptqw-bSQ&t=546s
-
-.carrusel{
-width: 90%;
-max-width: 120em;
-background-color: #239aaf;
-@include neo(1, 1em,1em);    
-
-}
-
-.carrusel.grande{
-    width: 200%;
-    background-color: orange;
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-
-}
-.carrusel.img{
-    width:calc( 100% / 2);
-    background-color: LIME;
-
-}
-
-.carrusel.puntos{
-    width:100%;
-    background-color: RED;
-    padding: 1em;
-    padding:1em;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.carrusel.punto{
-    width: 2em;
-    height: 2em;
-    background-color: blue;
-    margin 1em;
-}
-
-*/
 
 /*agregado por Christian*/
 .TituloSection{

@@ -10,16 +10,18 @@
 
 }
 
+.form-center{
+    display: flex;
+    justify-content: center;
+}
+
 .form-wrapper{
-    position: absolute;
-    left: 50%;
-    top: 50%;
     border-radius: 4px;
-    padding: 20px 70px;
-    width: 450px;
+    width: auto;
+    max-width: 450px;
+    margin: 5px;
+    padding: 30px;
     background-color: #ACE2E1(42,42,42,1);
-    transform: translate(-50%,-50%);
-    margin-top:30px;
 }
 
 .form-wrapper h2{
@@ -31,14 +33,14 @@
     margin: 20px 0 10px;
 }
 
-form .form-control{
+.form-control{
     height: 50px;
     position: relative;
     margin-top: 15px;
 }
 
 
-form .form-control input{
+.form-control input, .form-control select{
     height: 100%;
     width: 100%;
     border: solid #1B275F 2px;
@@ -48,21 +50,35 @@ form .form-control input{
     color: #1B275F;
     font-size: 1rem;
     padding: 0 20px;
+    padding-top: 24px;
+    box-sizing: border-box;
 }
+
+.form-control input:focus, .form-control select:focus{
+    background: whitesmoke;
+    }
 
 .form-control label{
     position: absolute;
     left: 20px;
     color:grey;
-    top: 50%;
+    top: 20%;
     font-size: 1rem;
     transform: translateY(-50%);
     pointer-events: none ;
     transition: all 0.1s ease;
+    margin-top: 5px;
+}
+
+.form-control input:focus + label, .form-control input:valid + label,
+.form-control select:focus + label, .form-control select:valid + label {
+    top: 5px;
+    font-size: 0.75rem;
+    color: #1B275F;
 }
 
 #birthdate{
-    padding: 16px 20px 0px;
+    padding: 24px;
 }
 
 #label-birthdate{
@@ -98,5 +114,18 @@ form button{
     border-radius: 4px;
     margin: 25px 0 10px;
     cursor: pointer;
-    transition: 0.1 ease;
+    transition: 0.1s ease;
+}
+
+form button:hover {
+    background-color: #1a7c8a;
+}
+.error{
+    color: red;
+    margin-bottom: 5px;
+}
+
+form-control input.error, .form-select.error{
+    border: 2px solid red
+
 }

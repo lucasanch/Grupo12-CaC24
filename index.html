@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="Image" >
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
-    
     <title>Finhouse - Home</title>
     
 
@@ -15,37 +14,38 @@
 
     <header class="header">
         <div id="logo">
-            <img src="assets/LogoFin.png" alt="Logo" width="30">
-            <h2>FinHouse</h2>
+            <a href="index.html">
+                <img src="assets/LogoFin.png" alt="Logo" width="40px" style="padding: 5px;">
+                <h2>FinHouse</h2>
+            </a>
         </div>
 
         <!-- navigator desktop-->
         <div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">Noticias</a></li>
                 <li><a href="acercade.html" >Acerca de</a></li>
                 <li><a href="news.html">Noticias</a></li>
                 <li><a href="formulario-registro-fintech.html">Registrate</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="registroFinanciero.html">Registro Financiero</a></li>
-                <!--<li><a href="https://api.bcra.gob.ar/estadisticas/v1/principalesvariables" target="_blank">Variables financieras</a></li>
-                -->
             </ul>
         </div>
 
         <!-- navigator mobile-->
-        <div class="div-toggle"><input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <div class="div-toggle">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
                 <label for="menu-toggle" class="menu-toggle-icon">
-            <i class="fi fi-brands-instagram"></i>
+                    <i class="fi fi-brands-instagram"></i>
+                    <i class="fi fi-rr-world"></i>
+                    <i class="fi fi-brands-facebook"></i>
+
                 </label>
             <ul class="nav-links-mobile">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="acercade.html" >Acerca de</a></li>
-                <p>asdf</p>
-                <li>asdf</li>
                 <li><a href="formulario-registro-fintech.html">Registrate</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="registroFinanciero.html">Registro Financiero</a></li>
+                
             </ul>
         </div>
 
@@ -54,7 +54,7 @@
     </header>
 
    
-    <section>
+    <section class="espacio">
         <h1> |  Administra tu dinero eficientemente </h1>
          <section id="banner" class="banner">
 
@@ -77,6 +77,9 @@
         <p>Derechos reservados por Copyright año 2024</p>
     </div>
   </footer>
-    
+
+  <button id="scrollToTop">&#9650</button>
+  <script src="/assets/js/index.js"></script>
+
 </body>
 </html>

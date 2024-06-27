@@ -1,10 +1,11 @@
 const firstname = document.querySelector('#firstname');
 const lastname = document.querySelector('#lastname');
 const errorFirstname = document.querySelector('#error-firstname');
+const errorLastname = document.querySelector('#error-lastname')
 const formRegister = document.querySelector('#formRegister');
 
 
-if(firstname && lastname && errorFirstname && formRegister){
+if(firstname && lastname && errorFirstname && errorLastname && formRegister){
     formRegister.addEventListener('submit', validarFormulario)
 }else{
     console.log("error no se puede manejar eventos no encontrados")
@@ -27,10 +28,11 @@ function validarFormulario(event){
 
     if(lastname.value===''){
         lastname.classList.add("error");
-        alert = "El apellido no puede estar vacio"
+        errorLastname.textContent = "El apellido no puede estar vacio"
         validation = false
     }else{
         lastname.classList.remove("error");
+        errorLastname.textContent = ""
        
     }
     
@@ -48,8 +50,10 @@ function validarFormulario(event){
     } );
      
     lastname.addEventListener('input', () =>{
-     
-            lastname.classList.remove('error')
+        if(lastname.value !== ''){
+           lastname.classList.remove('error')
+           errorLastname.textContent = "";
+        }
     } );
 
 

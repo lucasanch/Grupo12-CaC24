@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/form.registro.css">
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
-   
     <title>Formularios</title>
 </head>
 
 <body class="body-register">
-
+  <div class ="container">
     <header class="header">
         <div id="logo">
             <a href="index.html">
@@ -25,34 +24,33 @@
         <!-- navigator desktop-->
         <div>
             <ul class="nav-links">
-                <li><a href="news.html">Noticias</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="acercade.html" >Acerca de</a></li>
+                <li><a href="news.html">Noticias</a></li>
                 <li><a href="formulario-registro-fintech.html">Registrate</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
 
         <!-- navigator mobile-->
-        <div class="div-toggle"><input type="checkbox" id="menu-toggle" class="menu-toggle">
-                <label for="menu-toggle" class="menu-toggle-icon">
-                    <i class="fi fi-brands-instagram"></i>
-                    <i class="fi fi-rr-world"></i>
-                    <i class="fi fi-brands-facebook"></i>
-                </label>
+        <div class="div-toggle">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-toggle-icon">
+                    <i class="fas fa-bars"></i>
+            </label>
             <ul class="nav-links-mobile">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="acercade.html" >Acerca de</a></li>
+                <li><a href="news.html">Noticias</a></li>
                 <li><a href="formulario-registro-fintech.html">Registrate</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
 
-
-
     </header>
 
-    <div class="form-center">
-        <section class="form-wrapper">
+    <main class="form-center">
+    <section class="form-wrapper">
         <h2> Formulario de Registro</h2>
 
         <form id="formRegister" method="POST" novalidate action="#">
@@ -65,13 +63,14 @@
             <label for="lastname">Apellido:</label>
             <input type="text" name="lastname" id="lastname" maxlength="15">
         </div>
+        <div class="error" id="error-lastname"></div>
         <div class="form-control">
             <label for="email-txt">E-mail:</label>
             <input type="email" name="email-txt" id="email-txt" maxlength="15">
         </div>
         <div class="form-control">
-        <label for="password">Contraseña:</label>
-        <input type="password" name="password" id="password" maxlength="15">
+          <label for="password">Contraseña:</label>
+          <input type="password" name="password" id="password" maxlength="15">
         </div>
         <div class="form-control">
             <label for="birthdate">Fecha de Nacimiento:</label>
@@ -94,7 +93,6 @@
                 <input type="checkbox" id="terms">
                 <label for="terms">Acepto términos y condiciones</label>
             </div>
-
         </div>
         
         <button type="submit"> Registrarse</button>
@@ -103,20 +101,21 @@
             <a href="#">¿Necesitas Ayuda?</a>
         </div>
         </form>
-        </section>
-    </div>
+    </section>
+    </main>
+</div>  
 
 <footer class="contenedorFooter">
-    <div class="sociales">
+     <div class="sociales">
        <a href="https://www.instagram.com" target="_blank"> <i class="fi fi-brands-instagram"></i> </a>
        <a href="https://www.facebook.com" target="_blank"> <i class="fi fi-brands-facebook"></i> </a>
        <a href="https://www.twitter.com"> <i class="fi fi-brands-twitter"></i> </a>
-   </div>
-  <div>
+     </div>
+     <div>
        <p>Finhouse</p>
        <p>Derechos reservados por Copyright año 2024</p>
-   </div>
- </footer>
+     </div>
+</footer>
 
  <button id="scrollToTop">&#9650</button>
  <script src="/assets/js/index.js"></script>

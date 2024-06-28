@@ -5,6 +5,8 @@ const errorLastname = document.querySelector('#error-lastname')
 const formRegister = document.querySelector('#formRegister');
 
 
+
+
 if(firstname && lastname && errorFirstname && errorLastname && formRegister){
     formRegister.addEventListener('submit', validarFormulario)
 }else{
@@ -37,9 +39,11 @@ function validarFormulario(event){
     }
     
     if (validation){
-        console.log("Nombre y apellidos validos")
+        console.log("Nombre y apellidos validos");
+        window.alert(("Carga exitosa"));
     }else{
-        console.log("el formulario tiene errores, no se puede enviar")
+        console.log("el formulario tiene errores, no se puede enviar");
+        window.alert(("Completar el formulario"));
     }
 
     firstname.addEventListener('input', () =>{
@@ -57,7 +61,7 @@ function validarFormulario(event){
     } );
 
 
-}console.log ("holis")
+}
 
 function scrollToTop(){
     window.scrollTo({
